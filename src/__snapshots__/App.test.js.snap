@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component renders the UI as expected 1`] = `
+<div
+  className="Card"
+>
+  <h3>
+    First Card
+  </h3>
+  <p>
+    Lorem ipsum
+  </p>
+</div>
+`;
+
+exports[`List component renders the UI as expected 1`] = `
+<section
+  className="List"
+>
+  <header
+    className="List-header"
+  >
+    <h2>
+      First List
+    </h2>
+  </header>
+  <div
+    className="List-cards"
+  >
+    
+  </div>
+</section>
+`;

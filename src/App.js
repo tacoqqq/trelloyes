@@ -6,7 +6,7 @@ import './App.css';
 function App(props) {
   const allList = props.store.lists;
   console.log(allList);
-  const listComponentArray = allList.map(list => <List header={list.header} cards={list.cardIds.map(id => props.store.allCards[id])}/>)
+  const listComponentArray = allList.map(list => <List key={list.id} header={list.header} cards={list.cardIds.map(id => props.store.allCards[id])}/>)
 
   return (
     <main className='App'>
