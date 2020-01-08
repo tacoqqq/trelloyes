@@ -22,13 +22,15 @@ describe('Card Component', () => {
     });
 })
 
+
 describe('List component', () => {
 
     it('renders component without error', () => {
         const div = document.createElement('div');
-        ReactDOM.render(<List />, div);
+        ReactDOM.render(<List key="1" header="First List" cards={{title:"First Card",content:"Lorem ipsum"}} />, div);
         ReactDOM.unmountComponentAtNode(div);
     });
+
 
     it('renders the UI as expected', () => {
         const tree = renderer.
@@ -36,4 +38,5 @@ describe('List component', () => {
             .toJSON();
         expect(tree).toMatchSnapshot();
     })
+  
 })
