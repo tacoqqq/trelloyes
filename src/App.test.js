@@ -33,10 +33,10 @@ describe('List component', () => {
 
 
     it('renders the UI as expected', () => {
-        const tree = renderer.
+        const treeOne = renderer.
             create(<List key="2" header="First List" cards={[{id:"1",title:"First Card",content:"Lorem ipsum"}]} />)
             .toJSON();
-        expect(tree).toMatchSnapshot();
+        expect(treeOne).toMatchSnapshot();
     })
   
 })
