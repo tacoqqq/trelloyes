@@ -16,8 +16,8 @@ function List(props){
     */
 
     //console.log(props.cards)
-
-    const cardArray = props.cards.map(card => <Card key={card.id} title={card.title} content={card.content}/>);
+    const allCards = props.cards ? props.cards:[]
+    const cardArray = allCards.map(card => <Card key={card.id} title={card.title} content={card.content}/>);
 
     //console.log(props.cards.map(card => card.id))
 

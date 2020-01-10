@@ -16,7 +16,7 @@ describe('Card Component', () => {
 
     it('renders the UI as expected', () => {
         const tree = renderer.
-            create(<Card id="1" title="First Card" content="Lorem ipsum"/>)
+            create(<Card key="1" title="First Card" content="Lorem ipsum"/>)
             .toJSON();
         expect(tree).toMatchSnapshot();
     });
@@ -24,7 +24,6 @@ describe('Card Component', () => {
 
 
 describe('List component', () => {
-
     it('renders component without error', () => {
         const div = document.createElement('div');
         ReactDOM.render(<List key="1" header="First List" cards={[{id:"1",title:"First Card",content:"Lorem ipsum"}]} />, div);
@@ -34,9 +33,13 @@ describe('List component', () => {
 
     it('renders the UI as expected', () => {
         const treeOne = renderer.
-            create(<List key="2" header="First List" cards={[{id:"1",title:"First Card",content:"Lorem ipsum"}]} />)
+            /*create(<List key="1" header="First List" cards={[{id:"2",title:"Second Card",content:"Lorem ipsum"}]} />)
+            .toJSON();*/
+            create(<List />)
             .toJSON();
         expect(treeOne).toMatchSnapshot();
-    })
-  
+    })  
+
 })
+
+
