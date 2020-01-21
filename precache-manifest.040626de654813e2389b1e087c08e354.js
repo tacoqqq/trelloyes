@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9dd48ef5a769db617deededc89116b61",
+    "revision": "0c4009f0345216e009413592fa0399b8",
     "url": "/trelloyes/index.html"
   },
   {
-    "revision": "b7977375535527f94c4f",
+    "revision": "6ed392072e7ec9d2f1ed",
     "url": "/trelloyes/static/css/main.29ea8a7b.chunk.css"
   },
   {
-    "revision": "6863a9e25e7b97a37371",
-    "url": "/trelloyes/static/js/2.fac3bd3b.chunk.js"
+    "revision": "448de994b121dd18c7ae",
+    "url": "/trelloyes/static/js/2.4968c227.chunk.js"
   },
   {
     "revision": "d705cb622423d72c5defbf368ca70dcc",
-    "url": "/trelloyes/static/js/2.fac3bd3b.chunk.js.LICENSE"
+    "url": "/trelloyes/static/js/2.4968c227.chunk.js.LICENSE"
   },
   {
-    "revision": "b7977375535527f94c4f",
-    "url": "/trelloyes/static/js/main.da2985a8.chunk.js"
+    "revision": "6ed392072e7ec9d2f1ed",
+    "url": "/trelloyes/static/js/main.4761396a.chunk.js"
   },
   {
     "revision": "7c45f1a52fb7b1f774a0",
