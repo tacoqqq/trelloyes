@@ -28,7 +28,6 @@ class App extends React.Component {
     store: STORE
   }
 
-
   handleAddCard = (listid) => {
     const newCard = newRandomCard()
     const newLists = this.state.store.lists
@@ -47,33 +46,6 @@ class App extends React.Component {
       }
     })
   }
-
-
-  /*
-  handleDeleteCard = (cardId) => {
-    console.log('handleDeleteCard clicked', {cardId})
-    const lists = this.state.store.lists
-    const newAllCards = omit(this.state.store.allCards, cardId)
-    
-    const newLists = lists.map(list => ({ 
-      ...list,
-      cardIds: list.cardIds.filter(id => id != cardId)
-    }))
-
-    console.log(newLists)
-    console.log(newAllCards)
-
-    //const newCards = omit(allCards, cardId)
-
-    this.setState({
-      store: {
-        lists: newLists,
-        allCards: newAllCards
-      }
-    })
-
-  }
-  */
 
   
   handleDeleteCard = (cardId) => {
@@ -100,7 +72,6 @@ class App extends React.Component {
   }
   
     
-
   render(){
     const allList = this.state.store.lists ? this.state.store.lists:[]
     return (
