@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/trelloyes/static/css/main.29ea8a7b.chunk.css",
-    "main.js": "/trelloyes/static/js/main.4761396a.chunk.js",
-    "main.js.map": "/trelloyes/static/js/main.4761396a.chunk.js.map",
+    "main.js": "/trelloyes/static/js/main.e5978339.chunk.js",
+    "main.js.map": "/trelloyes/static/js/main.e5978339.chunk.js.map",
     "runtime-main.js": "/trelloyes/static/js/runtime-main.2b06735e.js",
     "runtime-main.js.map": "/trelloyes/static/js/runtime-main.2b06735e.js.map",
     "static/js/2.4968c227.chunk.js": "/trelloyes/static/js/2.4968c227.chunk.js",
     "static/js/2.4968c227.chunk.js.map": "/trelloyes/static/js/2.4968c227.chunk.js.map",
     "index.html": "/trelloyes/index.html",
-    "precache-manifest.040626de654813e2389b1e087c08e354.js": "/trelloyes/precache-manifest.040626de654813e2389b1e087c08e354.js",
+    "precache-manifest.ded619162f155bc79492373583ea2b9e.js": "/trelloyes/precache-manifest.ded619162f155bc79492373583ea2b9e.js",
     "service-worker.js": "/trelloyes/service-worker.js",
     "static/css/main.29ea8a7b.chunk.css.map": "/trelloyes/static/css/main.29ea8a7b.chunk.css.map",
     "static/js/2.4968c227.chunk.js.LICENSE": "/trelloyes/static/js/2.4968c227.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.2b06735e.js",
     "static/js/2.4968c227.chunk.js",
     "static/css/main.29ea8a7b.chunk.css",
-    "static/js/main.4761396a.chunk.js"
+    "static/js/main.e5978339.chunk.js"
   ]
 }
