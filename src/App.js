@@ -31,20 +31,51 @@ class App extends React.Component {
 
   handleAddCard = (listid) => {
     const newCard = newRandomCard()
-    const allCards = this.state.store.allCards
-    const lists = this.state.store.lists
+    const newLists = this.state.store.lists
+    const newAllCards = this.state.store.allCards
     
-    lists.map(list => {
+    newLists.map(list => {
       if (listid === list.id) {
         list.cardIds.push(newCard.id)
-        allCards[newCard.id] = newCard
+        newAllCards[newCard.id] = newCard
       }}
     )
     this.setState({
-      store: STORE
+      store: {
+        lists: newLists,
+        allCards: newAllCards
+      }
     })
   }
 
+
+  /*
+  handleDeleteCard = (cardId) => {
+    console.log('handleDeleteCard clicked', {cardId})
+    const lists = this.state.store.lists
+    const newAllCards = omit(this.state.store.allCards, cardId)
+    
+    const newLists = lists.map(list => ({ 
+      ...list,
+      cardIds: list.cardIds.filter(id => id != cardId)
+    }))
+
+    console.log(newLists)
+    console.log(newAllCards)
+
+    //const newCards = omit(allCards, cardId)
+
+    this.setState({
+      store: {
+        lists: newLists,
+        allCards: newAllCards
+      }
+    })
+
+  }
+  */
+
+  
   handleDeleteCard = (cardId) => {
     console.log('handleDeleteCard clicked', {cardId})
     const lists = this.state.store.lists
@@ -57,15 +88,17 @@ class App extends React.Component {
 
     console.log(newLists)
 
-    //const newCards = omit(allCards, cardId)
+    const newAllCards = omit(allCards, cardId)
 
     this.setState({
       store: {
-        lists: newLists
+        lists: newLists,
+        allCards: newAllCards
       }
     })
 
   }
+  
     
 
   render(){
